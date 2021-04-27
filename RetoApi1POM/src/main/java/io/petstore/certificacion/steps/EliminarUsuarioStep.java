@@ -11,29 +11,32 @@ import org.junit.Assert;
 import java.util.LinkedList;
 import java.util.List;
 
+import static io.petstore.certificacion.utils.ConfirguracionAPI.PATH_USER;
+import static io.petstore.certificacion.utils.ConfirguracionAPI.URI_PETSTORE;
+
 public class EliminarUsuarioStep {
 
     private ModeloUsuario modeloUsuario;
     private Response response;
-    private LeerFichero leerFichero=new LeerFichero();
+    private LeerFichero leerFichero = new LeerFichero();
 
     @Step
-    public void deleteUserByUserName()throws Exception{
+    public void deleteUserByUserName() throws Exception {
 
-        List<String> data=new LinkedList<>();
-        data= leerFichero.extraerDatosCrear();
-        modeloUsuario =new ModeloUsuario(data);
+        List<String> data = new LinkedList<>();
+        data = leerFichero.extraerDatosCrear();
+        modeloUsuario = new ModeloUsuario(data);
 
         response = SerenityRest.given()
                 .contentType("application/json")
-                .baseUri("https://petstore.swagger.io")
-                .basePath("/v2/user/"+modeloUsuario.llenatJson().get("username"))
+                .baseUri(URI_PETSTORE)
+                .basePath(PATH_USER + modeloUsuario.llenatJson().get("username"))
                 .log().all().delete();
     }
 
     @Step
-    public void validateNameUserEliminado(){
-        String message=response.body().jsonPath().get("message");
+    public void validateNameUserEliminado() {
+        String message = response.body().jsonPath().get("message");
         Assert.assertThat(modeloUsuario.llenatJson().get("username"), Matchers.is(message));
     }
 

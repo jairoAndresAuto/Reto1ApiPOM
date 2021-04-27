@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="As aproduct owner" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-25T01:33:13" hostname="DESKTOP-5VJR672" time="6.273">
+<testsuite name="As aproduct owner" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-27T21:21:09" hostname="DESKTOP-5VJR672" time="5.426">
   <properties/>
-  <testcase name="Delete user" classname="As aproduct owner" time="6.273"/>
+  <testcase name="Delete user" classname="As aproduct owner" time="5.426"/>
   <system-out><![CDATA[Request method:	DELETE
 Request URI:	https://petstore.swagger.io/v2/user/jagar
 Proxy:			<none>

@@ -27,7 +27,7 @@ public class GestionarUsuario {
 
 
     @When("^the user creates a new client$")
-    public void theUserCreatesANewClient() throws Exception{
+    public void theUserCreatesANewClient() throws Exception {
         createUserStep.postUser();
     }
 
@@ -39,7 +39,7 @@ public class GestionarUsuario {
     /*-------------------------------------------------------------------*/
 
     @When("^the user by query username$")
-    public void theUserByQueryUsername()throws Exception {
+    public void theUserByQueryUsername() throws Exception {
         consultarUsuario.getUserByUserName();
     }
 
@@ -54,20 +54,20 @@ public class GestionarUsuario {
     /*-------------------------------------------------------------------*/
 
     @When("^the user queries by username and submit request with changes in name$")
-    public void theUserQueriesByUsernameAndSubmitRequestWithChangesInName() throws Exception{
+    public void theUserQueriesByUsernameAndSubmitRequestWithChangesInName() throws Exception {
         actualizarUsuario.UpdateUserByUserName();
     }
 
 
     @Then("^verify uptade successfully$")
-    public void verifyUptadeSuccessfully()throws Exception {
+    public void verifyUptadeSuccessfully() throws Exception {
         actualizarUsuario.validateUpdateResponseNombre();
     }
 
     /*-------------------------------------------------------------------*/
 
     @When("^user enter username you want to delete$")
-    public void userEnterUsernameYouWantToDelete()throws Exception {
+    public void userEnterUsernameYouWantToDelete() throws Exception {
         eliminarUsuario.deleteUserByUserName();
     }
 

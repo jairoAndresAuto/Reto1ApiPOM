@@ -1,21 +1,19 @@
 package io.petstore.certificacion.modelos;
 
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
 public class ModeloUsuario {
 
     List<String> data;
+    private Map<String, Object> jsonMap = new HashMap<>();
 
     public ModeloUsuario(List<String> data) {
         this.data = data;
     }
 
-    private Map<String, Object> jsonMap = new HashMap<>();
-
-    public Map<String, Object> llenatJson(){
+    public Map<String, Object> llenatJson() {
         jsonMap.put("id", data.get(0));
         jsonMap.put("username", data.get(1));
         jsonMap.put("firstName", data.get(2));

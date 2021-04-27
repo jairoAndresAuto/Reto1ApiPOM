@@ -35,72 +35,72 @@ public class LeerFichero {
         return value;
     }
 
-    public List<String> extraerDatosCrear()throws Exception{
-        String hoja="Hoja1";
-        String nombreArchivo ="DataUsuario.xlsx";
-        List<String> listaDatos=new LinkedList<>();
+    public List<String> extraerDatosCrear() throws Exception {
+        String hoja = "Hoja1";
+        String nombreArchivo = "DataUsuario.xlsx";
+        List<String> listaDatos = new LinkedList<>();
 
-        for (int i=0;i<8;i++){
+        for (int i = 0; i < 8; i++) {
             switch (i) {
                 case 0:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
                 case 1:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
                 case 2:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
                 case 3:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
                 case 4:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
                 case 5:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
                 case 6:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
                 case 7:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,1));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 1));
                     break;
             }
         }
         return listaDatos;
     }
 
-    public List<String> extraerDatosActualizar()throws Exception{
-        String hoja="Hoja1";
-        String nombreArchivo ="DataUsuario.xlsx";
-        List<String> listaDatos=new LinkedList<>();
+    public List<String> extraerDatosActualizar() throws Exception {
+        String hoja = "Hoja1";
+        String nombreArchivo = "DataUsuario.xlsx";
+        List<String> listaDatos = new LinkedList<>();
 
-        for (int i=0;i<8;i++){
+        for (int i = 0; i < 8; i++) {
             switch (i) {
                 case 0:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
                 case 1:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
                 case 2:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
                 case 3:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
                 case 4:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
                 case 5:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
                 case 6:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
                 case 7:
-                    listaDatos.add(leerDatoExcel(hoja,nombreArchivo,i,2));
+                    listaDatos.add(leerDatoExcel(hoja, nombreArchivo, i, 2));
                     break;
             }
         }
